@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madhumitha's Flower Tribute</title>
+    <link rel="stylesheet" href="madhumitha-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="garden-bg"></div>
+    <div class="floating-petals">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+    </div>
+
+    <header class="madhumitha-header">
+        <div class="back-btn" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Friends</span>
+        </div>
+        <div class="madhumitha-title">
+            <h1 class="main-title">Madhumitha</h1>
+            <p class="subtitle">The Flower Garden</p>
+        </div>
+    </header>
+
+    <main class="madhumitha-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="madhumitha-avatar">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h2 class="hero-title">Dear Madhumitha,</h2>
+                <p class="hero-text">
+                    You're like a beautiful flower garden - full of life, color, and warmth! Your 
+                    gentle nature and caring heart make everyone around you bloom. You have this 
+                    amazing ability to bring sunshine and joy wherever you go, just like spring 
+                    flowers after winter.
+                </p>
+            </div>
+        </section>
+
+        <section class="warm-section">
+            <h3 class="section-title">Your Beautiful Moments</h3>
+            <div class="warm-grid">
+                <div class="warm-card" data-warm="1">
+                    <div class="warm-content">
+                        <div class="warm-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Gentle Care</h4>
+                        <p>Your caring nature makes everyone feel loved...</p>
+                        <div class="warm-date">Nurturing Soul</div>
+                    </div>
+                </div>
+
+                <div class="warm-card" data-warm="2">
+                    <div class="warm-content">
+                        <div class="warm-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h4>Warm Smile</h4>
+                        <p>Your smile brightens up any room instantly...</p>
+                        <div class="warm-date">Sunshine Bringer</div>
+                    </div>
+                </div>
+
+                <div class="warm-card" data-warm="3">
+                    <div class="warm-content">
+                        <div class="warm-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Inner Beauty</h4>
+                        <p>Your inner beauty shines through everything...</p>
+                        <div class="warm-date">Beautiful Soul</div>
+                    </div>
+                </div>
+
+                <div class="warm-card" data-warm="4">
+                    <div class="warm-content">
+                        <div class="warm-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Growth & Wisdom</h4>
+                        <p>You help others grow and learn with patience...</p>
+                        <div class="warm-date">Wise Gardener</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 class="section-title">Photo Gallery</h3>
+            <div class="photo-gallery">
+                <div class="photo-item" data-photo="1">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Garden Walk</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="2">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Flower Arrangement</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="3">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Spring Day</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="4">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Nature Walk</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="5">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Flower Garden</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="6">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Sunset View</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="7">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Butterfly Visit</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="8">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Morning Dew</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="9">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Rose Garden</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="10">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Lily Pond</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="11">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Tulip Field</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="12">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Cherry Blossoms</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="13">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Sunflower Field</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="14">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Lavender Garden</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="15">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Daisy Meadow</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="16">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Orchid Collection</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="17">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Peony Garden</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="18">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Iris Pond</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="19">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Daffodil Field</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="20">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Marigold Garden</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="21">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Jasmine Vine</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="22">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Lotus Pond</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="23">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Chrysanthemum</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="24">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Azalea Bush</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="25">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Camellia Tree</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="26">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Gardenia Bush</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="27">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Hydrangea</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="28">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Begonia</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="29">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Geranium</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="30">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Petunia</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="31">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Zinnia</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="32">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Cosmos</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="33">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Snapdragon</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="34">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Delphinium</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="35">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Foxglove</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="36">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Columbine</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="37">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Bleeding Heart</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="38">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Lungwort</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="39">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Primrose</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="40">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Violet</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="41">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Pansy</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="42">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Forget-Me-Not</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="43">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Bluebell</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="44">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Snowdrop</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="45">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Crocus</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="46">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Hyacinth</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="47">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Grape Hyacinth</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="48">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Allium</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="49">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Fritillaria</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="50">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Anemone</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-section">
+            <h3 class="section-title">A Message from the Garden</h3>
+            <div class="message-content">
+                <div class="message-card">
+                    <p class="message-text">
+                        "Madhumitha, you're like a beautiful flower garden in full bloom - vibrant, 
+                        nurturing, and full of life! Your gentle nature and caring heart make everyone 
+                        around you feel loved and appreciated, just like flowers that bloom in spring.
+                        <br><br>
+                        You have this amazing ability to bring warmth and joy wherever you go. Your 
+                        kindness is like sunshine that helps others grow and flourish. You're not just 
+                        beautiful on the outside, but your inner beauty shines through everything you do.
+                        <br><br>
+                        Keep blooming, keep spreading joy, keep being the beautiful flower garden you are!"
+                    </p>
+                    <div class="message-signature">
+                        <span>With garden love,</span>
+                        <span class="signature">Your Friend</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wishes-section">
+            <h3 class="section-title">Birthday Wishes</h3>
+            <div class="wishes-container">
+                <div class="wish-card">
+                    <i class="fas fa-seedling"></i>
+                    <p>May your life bloom with endless beauty and joy</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-sun"></i>
+                    <p>Wishing you warmth and sunshine every day</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-heart"></i>
+                    <p>Here's to your gentle heart and caring soul</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-star"></i>
+                    <p>May you continue to bloom and inspire others</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="floating-sunbeams">
+        <div class="sunbeam"></div>
+        <div class="sunbeam"></div>
+        <div class="sunbeam"></div>
+        <div class="sunbeam"></div>
+        <div class="sunbeam"></div>
+    </div>
+
+    <script src="madhumitha-script.js"></script>
+</body>
+<audio id="bg-music" src="songs/dumdare.mp3" loop style="display:none;"></audio>
+<script>
+  // Play audio on first user interaction to bypass autoplay restrictions
+  document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('bg-music');
+    function playAudioOnce() {
+      if (audio.paused) {
+        audio.play().catch(()=>{});
+      }
+      document.removeEventListener('click', playAudioOnce);
+      document.removeEventListener('keydown', playAudioOnce);
+      document.removeEventListener('touchstart', playAudioOnce);
+    }
+    document.addEventListener('click', playAudioOnce);
+    document.addEventListener('keydown', playAudioOnce);
+    document.addEventListener('touchstart', playAudioOnce);
+  });
+</script>
+</html> 

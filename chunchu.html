@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chunchu's Universe - Special Memories</title>
+    <link rel="stylesheet" href="chunchu-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="universe-bg">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="shooting-stars"></div>
+        <div class="planets"></div>
+    </div>
+    
+    <header class="chunchu-header">
+        <button class="back-btn" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Friends</span>
+        </button>
+        <div class="header-content">
+            <div class="chunchu-avatar">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <div class="title-content">
+                <h1 class="chunchu-title">Chunchu</h1>
+                <p class="subtitle">The Universe Explorer</p>
+                <p class="hero-text">Bringing cosmic joy and infinite possibilities to our world</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="chunchu-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2 class="section-title">Welcome to Chunchu's Universe</h2>
+                <p class="hero-description">
+                    Like the vast universe itself, Chunchu brings endless wonder, mystery, and joy to our lives. 
+                    His spirit is as boundless as space, and his kindness shines like the brightest stars.
+                </p>
+            </div>
+        </section>
+
+        <section class="adventures-section">
+            <h3 class="section-title">Cosmic Adventures</h3>
+            <div class="adventures-grid">
+                <div class="adventure-card" data-adventure="1">
+                    <div class="adventure-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="adventure-content">
+                        <h4>Stellar Moments</h4>
+                        <p>Those times when Chunchu's brilliance lit up our darkest days</p>
+                        <span class="adventure-date">Shining Bright</span>
+                    </div>
+                </div>
+                <div class="adventure-card" data-adventure="2">
+                    <div class="adventure-icon">
+                        <i class="fas fa-meteor"></i>
+                    </div>
+                    <div class="adventure-content">
+                        <h4>Meteor Showers</h4>
+                        <p>Unexpected moments of pure magic and wonder</p>
+                        <span class="adventure-date">Magical Times</span>
+                    </div>
+                </div>
+                <div class="adventure-card" data-adventure="3">
+                    <div class="adventure-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <div class="adventure-content">
+                        <h4>Orbital Friendships</h4>
+                        <p>How Chunchu connects everyone in perfect harmony</p>
+                        <span class="adventure-date">Perfect Balance</span>
+                    </div>
+                </div>
+                <div class="adventure-card" data-adventure="4">
+                    <div class="adventure-icon">
+                        <i class="fas fa-galaxy"></i>
+                    </div>
+                    <div class="adventure-content">
+                        <h4>Galactic Laughter</h4>
+                        <p>His cosmic sense of humor that reaches across galaxies</p>
+                        <span class="adventure-date">Universal Joy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 class="section-title">Cosmic Memories</h3>
+            <div class="photo-gallery">
+                <div class="photo-item" data-photo="1">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Stargazing Night</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="2">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Space Adventure</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="3">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Galaxy View</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="4">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Planet Visit</p>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="5">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Cosmic Dance</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="6">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Nebula Dreams</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="7">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Black Hole Mystery</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="8">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Comet Trail</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="9">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Solar Flare</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="10">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Aurora Lights</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="11">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Constellation Map</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="12">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Space Station</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="13">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Moon Landing</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="14">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Mars Rover</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="15">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Jupiter Storm</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="16">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Saturn Rings</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="17">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Uranus Orbit</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="18">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Neptune Waves</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="19">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Pluto Heart</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="20">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Andromeda Galaxy</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="21">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Milky Way</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="22">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Supernova</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="23">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Pulsar</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="24">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Quasar</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="25">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Dark Matter</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="26">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Wormhole</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="27">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Time Dilation</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="28">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Space-Time</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="29">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Gravity Well</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="30">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Cosmic Ray</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="31">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Solar Wind</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="32">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Magnetic Field</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="33">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Plasma Storm</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="34">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Ion Trail</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="35">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Quantum Leap</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="36">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>String Theory</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="37">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Multiverse</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="38">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Parallel World</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="39">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Dimension Shift</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="40">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Reality Warp</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="41">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Space Portal</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="42">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Time Machine</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="43">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Teleportation</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="44">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Hologram</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="45">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Energy Field</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="46">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Force Shield</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="47">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Laser Beam</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="48">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Photon Burst</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="49">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Neutron Star</p>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="50">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Cosmic Harmony</p>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more-container">
+                <button class="see-more-btn" onclick="togglePhotos()">
+                    <i class="fas fa-images"></i>
+                    <span>See More Photos</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="message-section">
+            <h3 class="section-title">A Message from the Universe</h3>
+            <div class="message-content">
+                <div class="message-card">
+                    <p class="message-text">
+                        "Chunchu, you are like the universe itself - vast, mysterious, and full of infinite possibilities! 
+                        Your spirit is as boundless as space, and your kindness radiates like the brightest stars in the cosmos.
+                        <br><br>
+                        Just as the universe brings wonder and amazement to all who gaze upon it, you bring joy and 
+                        inspiration to everyone around you. Your unique perspective and cosmic sense of humor make 
+                        every moment feel like a magical journey through the stars.
+                        <br><br>
+                        You remind us that life is an adventure waiting to be explored, and that friendship is the 
+                        most powerful force in the universe. Keep shining bright, cosmic explorer!"
+                    </p>
+                    <div class="message-signature">
+                        <span>With universal love,</span>
+                        <span class="signature">Your Friend</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wishes-section">
+            <h3 class="section-title">Cosmic Wishes</h3>
+            <div class="wishes-container">
+                <div class="wish-card">
+                    <i class="fas fa-rocket"></i>
+                    <p>May your adventures reach the farthest galaxies</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-star"></i>
+                    <p>Wishing you endless cosmic joy and wonder</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-meteor"></i>
+                    <p>Here's to your magical spirit and infinite possibilities</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-galaxy"></i>
+                    <p>May you continue to bring universal happiness</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="floating-asteroids">
+        <div class="asteroid"></div>
+        <div class="asteroid"></div>
+        <div class="asteroid"></div>
+        <div class="asteroid"></div>
+        <div class="asteroid"></div>
+    </div>
+
+    <script src="chunchu-script.js"></script>
+</body>
+</html> 

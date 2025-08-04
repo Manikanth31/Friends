@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahari's Avian Sanctuary - Special Memories</title>
+    <link rel="stylesheet" href="lahari-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Fredoka+One:wght@400&family=Comfortaa:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="forest-bg">
+        <div class="trees"></div>
+        <div class="leaves"></div>
+        <div class="clouds"></div>
+    </div>
+    
+    <header class="lahari-header">
+        <button class="back-btn" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Friends</span>
+        </button>
+        <div class="header-content">
+            <div class="lahari-avatar">
+                <i class="fas fa-owl"></i>
+            </div>
+            <div class="title-content">
+                <h1 class="lahari-title">Lahari</h1>
+                <p class="subtitle">The Wise Owl</p>
+                <p class="hero-text">Soaring through life with wisdom and grace</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="lahari-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2 class="hero-title">Avian Blessings</h2>
+                <p class="hero-description">
+                    Like the wise owl that watches over the forest, you bring wisdom and insight to our lives. 
+                    Your gentle spirit and keen observation make you a guiding light in our friendship flock.
+                </p>
+                <div class="bird-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-feather"></i>
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Wings of Wisdom</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-eye"></i>
+                        <span class="stat-number">360°</span>
+                        <span class="stat-label">Vision</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-tree"></i>
+                        <span class="stat-number">100</span>
+                        <span class="stat-label">Forest Friends</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="memories-section">
+            <h3 class="section-title">Avian Memories</h3>
+            <div class="memories-grid">
+                <div class="memory-card" data-memory="1">
+                    <div class="memory-icon">
+                        <i class="fas fa-owl"></i>
+                    </div>
+                    <h4>Wise Counsel</h4>
+                    <p>Your thoughtful advice and wisdom</p>
+                </div>
+                <div class="memory-card" data-memory="2">
+                    <div class="memory-icon">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <h4>Peaceful Spirit</h4>
+                    <p>Bringing calm and serenity to all</p>
+                </div>
+                <div class="memory-card" data-memory="3">
+                    <div class="memory-icon">
+                        <i class="fas fa-eagle"></i>
+                    </div>
+                    <h4>Eagle Vision</h4>
+                    <p>Seeing opportunities from great heights</p>
+                </div>
+                <div class="memory-card" data-memory="4">
+                    <div class="memory-icon">
+                        <i class="fas fa-parrot"></i>
+                    </div>
+                    <h4>Colorful Personality</h4>
+                    <p>Brightening every conversation</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 class="section-title">Avian Memories</h3>
+            <div class="photo-gallery">
+                <div class="photo-item" data-photo="1">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-owl"></i>
+                        <span>Wise Moment 1</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="2">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-dove"></i>
+                        <span>Peaceful Day 2</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="3">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-eagle"></i>
+                        <span>Eagle Eye 3</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="4">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-parrot"></i>
+                        <span>Colorful Day 4</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="5">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-crow"></i>
+                        <span>Smart Moment 5</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="6">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-hawk"></i>
+                        <span>Hawk Vision 6</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="7">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-penguin"></i>
+                        <span>Cool Friend 7</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="8">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-peacock"></i>
+                        <span>Beautiful Display 8</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="9">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-swan"></i>
+                        <span>Graceful Moment 9</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="10">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-hummingbird"></i>
+                        <span>Quick Visit 10</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="11">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-owl"></i>
+                        <span>Night Watch 11</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="12">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-dove"></i>
+                        <span>Peace Offering 12</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="13">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-eagle"></i>
+                        <span>High Flight 13</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="14">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-parrot"></i>
+                        <span>Chatty Friend 14</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="15">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-crow"></i>
+                        <span>Smart Move 15</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="16">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-hawk"></i>
+                        <span>Sharp Vision 16</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="17">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-penguin"></i>
+                        <span>Cool Comrade 17</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="18">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-peacock"></i>
+                        <span>Colorful Show 18</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="19">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-swan"></i>
+                        <span>Elegant Dance 19</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="20">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-hummingbird"></i>
+                        <span>Swift Visit 20</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="21">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-owl"></i>
+                        <span>Wise Counsel 21</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="22">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-dove"></i>
+                        <span>Peaceful Heart 22</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="23">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-eagle"></i>
+                        <span>Freedom Flight 23</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="24">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-parrot"></i>
+                        <span>Vibrant Spirit 24</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="25">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-crow"></i>
+                        <span>Clever Friend 25</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="26">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-hawk"></i>
+                        <span>Focused Gaze 26</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="27">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-penguin"></i>
+                        <span>Chilly Adventure 27</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="28">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-peacock"></i>
+                        <span>Majestic Display 28</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="29">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-swan"></i>
+                        <span>Graceful Glide 29</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="30">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-hummingbird"></i>
+                        <span>Quick Energy 30</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="31">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-owl"></i>
+                        <span>Night Wisdom 31</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="32">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-dove"></i>
+                        <span>Pure Heart 32</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="33">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-eagle"></i>
+                        <span>Mountain High 33</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="34">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-parrot"></i>
+                        <span>Rainbow Friend 34</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="35">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-crow"></i>
+                        <span>Smart Strategy 35</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="36">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-hawk"></i>
+                        <span>Precise Vision 36</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="37">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-penguin"></i>
+                        <span>Snow Friend 37</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="38">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-peacock"></i>
+                        <span>Royal Display 38</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="39">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-swan"></i>
+                        <span>Elegant Beauty 39</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="40">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-hummingbird"></i>
+                        <span>Speed Demon 40</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="41">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-owl"></i>
+                        <span>Wise Words 41</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="42">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-dove"></i>
+                        <span>Peaceful Soul 42</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="43">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-eagle"></i>
+                        <span>Sky High 43</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="44">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-parrot"></i>
+                        <span>Colorful Chat 44</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="45">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-crow"></i>
+                        <span>Brainy Friend 45</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="46">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-hawk"></i>
+                        <span>Sharp Focus 46</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="47">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-penguin"></i>
+                        <span>Ice Friend 47</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="48">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-peacock"></i>
+                        <span>Feather Show 48</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="49">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-swan"></i>
+                        <span>Graceful Soul 49</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="50">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-hummingbird"></i>
+                        <span>Quick Spirit 50</span>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more-container">
+                <button class="see-more-btn" onclick="togglePhotos()">
+                    <i class="fas fa-images"></i>
+                    <span>See More Photos</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="message-section">
+            <h3 class="section-title">Avian Message</h3>
+            <div class="message-content">
+                <div class="message-text">
+                    <p>Dear Lahari,</p>
+                    <p>Like the wise owl that watches over the forest, you bring wisdom and insight to our lives. Your gentle spirit and keen observation make you a guiding light in our friendship flock.</p>
+                    <p>You soar through life with grace and determination, always finding the right path even when the winds are strong. Your wisdom helps us navigate through challenges, and your peaceful nature brings calm to any storm.</p>
+                    <p>May your wings continue to carry you to new heights, and may your wisdom guide us all.</p>
+                    <p class="signature">With avian love,<br>Your Friends</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wishes-section">
+            <h3 class="section-title">Avian Wishes</h3>
+            <div class="wishes-grid">
+                <div class="wish-card">
+                    <i class="fas fa-owl"></i>
+                    <p>May your wisdom grow deeper with each passing year</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-dove"></i>
+                    <p>Wishing you peace and serenity in all your endeavors</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-eagle"></i>
+                    <p>Soar to new heights and achieve your wildest dreams</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-feather"></i>
+                    <p>May your spirit remain as light and free as a feather</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="floating-birds"></div>
+    <script src="lahari-script.js"></script>
+</body>
+</html> 

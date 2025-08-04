@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandana's Cosmic Journey - Special Memories</title>
+    <link rel="stylesheet" href="chandana-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cosmic-bg">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="shooting-stars"></div>
+        <div class="earth-orbit">
+            <div class="earth"></div>
+            <div class="moon-orbit">
+                <div class="moon"></div>
+            </div>
+        </div>
+    </div>
+    
+    <header class="chandana-header">
+        <button class="back-btn" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Friends</span>
+        </button>
+        <div class="header-content">
+            <div class="chandana-avatar">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="title-content">
+                <h1 class="chandana-title">Chandana</h1>
+                <p class="subtitle">The Cosmic Guardian</p>
+                <p class="hero-text">Watching over us from the lunar realm with infinite wisdom</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="chandana-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h2 class="hero-title">Lunar Blessings</h2>
+                <p class="hero-description">
+                    Like the moon that orbits our Earth, you bring light to our darkest nights. 
+                    Your gentle presence illuminates our path and guides us through life's journey.
+                </p>
+                <div class="cosmic-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Cosmic Love</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-moon"></i>
+                        <span class="stat-number">28</span>
+                        <span class="stat-label">Lunar Cycles</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-globe-americas"></i>
+                        <span class="stat-number">365</span>
+                        <span class="stat-label">Earth Days</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="memories-section">
+            <h3 class="section-title">Cosmic Memories</h3>
+            <div class="memories-grid">
+                <div class="memory-card" data-memory="1">
+                    <div class="memory-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4>Space Adventures</h4>
+                    <p>Exploring the vast universe together</p>
+                </div>
+                <div class="memory-card" data-memory="2">
+                    <div class="memory-icon">
+                        <i class="fas fa-satellite"></i>
+                    </div>
+                    <h4>Satellite Dreams</h4>
+                    <p>Reaching for the stars and beyond</p>
+                </div>
+                <div class="memory-card" data-memory="3">
+                    <div class="memory-icon">
+                        <i class="fas fa-meteor"></i>
+                    </div>
+                    <h4>Meteor Showers</h4>
+                    <p>Witnessing cosmic wonders together</p>
+                </div>
+                <div class="memory-card" data-memory="4">
+                    <div class="memory-icon">
+                        <i class="fas fa-galaxy"></i>
+                    </div>
+                    <h4>Galactic Bonds</h4>
+                    <p>Friendship that spans the universe</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 class="section-title">Lunar Memories</h3>
+            <div class="photo-gallery">
+                <div class="photo-item" data-photo="1">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-moon"></i>
+                        <span>Cosmic Memory 1</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="2">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-star"></i>
+                        <span>Stellar Moment 2</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="3">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-planet-ringed"></i>
+                        <span>Orbital Memory 3</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="4">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-satellite-dish"></i>
+                        <span>Satellite Day 4</span>
+                    </div>
+                </div>
+                <div class="photo-item" data-photo="5">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-meteor"></i>
+                        <span>Meteor Night 5</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="6">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-galaxy"></i>
+                        <span>Galactic Memory 6</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="7">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-rocket"></i>
+                        <span>Rocket Launch 7</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="8">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-astronaut"></i>
+                        <span>Space Walk 8</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="9">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-solar-system"></i>
+                        <span>Solar System 9</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="10">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-comet"></i>
+                        <span>Comet Trail 10</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="11">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-moon"></i>
+                        <span>Lunar Eclipse 11</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="12">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-star"></i>
+                        <span>Stellar Night 12</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="13">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-planet-ringed"></i>
+                        <span>Ringed Planet 13</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="14">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-satellite-dish"></i>
+                        <span>Deep Space 14</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="15">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-meteor"></i>
+                        <span>Meteor Shower 15</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="16">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-galaxy"></i>
+                        <span>Galaxy View 16</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="17">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-rocket"></i>
+                        <span>Space Mission 17</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="18">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-astronaut"></i>
+                        <span>Zero Gravity 18</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="19">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-solar-system"></i>
+                        <span>Planet Tour 19</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="20">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-comet"></i>
+                        <span>Comet Watch 20</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="21">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-moon"></i>
+                        <span>Full Moon 21</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="22">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-star"></i>
+                        <span>Star Gazing 22</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="23">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-planet-ringed"></i>
+                        <span>Planet Rings 23</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="24">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-satellite-dish"></i>
+                        <span>Satellite View 24</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="25">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-meteor"></i>
+                        <span>Meteor Storm 25</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="26">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-galaxy"></i>
+                        <span>Galaxy Core 26</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="27">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-rocket"></i>
+                        <span>Rocket Science 27</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="28">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-astronaut"></i>
+                        <span>Space Station 28</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="29">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-solar-system"></i>
+                        <span>Solar Flare 29</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="30">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-comet"></i>
+                        <span>Comet Orbit 30</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="31">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-moon"></i>
+                        <span>New Moon 31</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="32">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-star"></i>
+                        <span>Binary Stars 32</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="33">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-planet-ringed"></i>
+                        <span>Gas Giant 33</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="34">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-satellite-dish"></i>
+                        <span>Deep Space 34</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="35">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-meteor"></i>
+                        <span>Meteor Impact 35</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="36">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-galaxy"></i>
+                        <span>Spiral Galaxy 36</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="37">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-rocket"></i>
+                        <span>Space Race 37</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="38">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-astronaut"></i>
+                        <span>Moon Landing 38</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="39">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-solar-system"></i>
+                        <span>Solar Wind 39</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="40">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-comet"></i>
+                        <span>Comet Tail 40</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="41">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-moon"></i>
+                        <span>Waxing Moon 41</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="42">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-star"></i>
+                        <span>Supernova 42</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="43">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-planet-ringed"></i>
+                        <span>Ice Planet 43</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="44">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-satellite-dish"></i>
+                        <span>Radio Signal 44</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="45">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-meteor"></i>
+                        <span>Meteor Dust 45</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="46">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-galaxy"></i>
+                        <span>Elliptical Galaxy 46</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="47">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-rocket"></i>
+                        <span>Space Shuttle 47</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="48">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-astronaut"></i>
+                        <span>Space Suit 48</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="49">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-solar-system"></i>
+                        <span>Solar Storm 49</span>
+                    </div>
+                </div>
+                <div class="photo-item hidden-photo" data-photo="50">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-comet"></i>
+                        <span>Comet Cloud 50</span>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more-container">
+                <button class="see-more-btn" onclick="togglePhotos()">
+                    <i class="fas fa-images"></i>
+                    <span>See More Photos</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="message-section">
+            <h3 class="section-title">Cosmic Message</h3>
+            <div class="message-content">
+                <div class="message-text">
+                    <p>Dear Chandana,</p>
+                    <p>Like the moon that faithfully orbits our Earth, you have been a constant presence in our lives. Your gentle wisdom and calming influence remind us of the moon's serene beauty that lights up our darkest nights.</p>
+                    <p>You bring balance to our world, just as the moon balances the Earth's tides. Your friendship is as vast and infinite as the cosmos itself, and we're grateful for every moment we share in this cosmic journey called life.</p>
+                    <p>May your light continue to guide us through the universe of friendship.</p>
+                    <p class="signature">With cosmic love,<br>Your Friends</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wishes-section">
+            <h3 class="section-title">Lunar Wishes</h3>
+            <div class="wishes-grid">
+                <div class="wish-card">
+                    <i class="fas fa-star"></i>
+                    <p>May your light shine brighter than all the stars in the galaxy</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-moon"></i>
+                    <p>Wishing you wisdom as deep as the lunar craters</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-globe-americas"></i>
+                    <p>May your love orbit around you like the moon around Earth</p>
+                </div>
+                <div class="wish-card">
+                    <i class="fas fa-rocket"></i>
+                    <p>Reach for the stars and beyond in all your dreams</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="floating-asteroids"></div>
+    <script src="chandana-script.js"></script>
+</body>
+</html> 
