@@ -268,8 +268,8 @@
 
     <script src="script.js"></script>
 </body>
-<audio id="bg-music" src="songs/dumdare.mp3" loop style="display:none;"></audio>
-<!-- <script>
+<audio id="bg-music" src="songs\kirik.mp3" loop style="display:none;"></audio>
+<script>
   // Play audio on first user interaction to bypass autoplay restrictions
   document.addEventListener('DOMContentLoaded', function() {
     var audio = document.getElementById('bg-music');
@@ -285,11 +285,5 @@
     document.addEventListener('keydown', playAudioOnce);
     document.addEventListener('touchstart', playAudioOnce);
   });
-</script> -->
-<script>
-  document.addEventListener('click', function () {
-    const music = document.getElementById('bgMusic');
-    music.play();
-  }, { once: true }); // only runs once
 </script>
 </html> 
