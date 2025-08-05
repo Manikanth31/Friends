@@ -462,14 +462,13 @@
 
     <script src="lohan-script.js"></script>
 <!-- Background music: Munjaane Manjalli -->
-<audio id="bg-music" src="lohan/Munjaane-Manjalli.mp3" loop style="display:none;"></audio>
+<audio id="bg-music" src="L/Munjaane-Manjalli.mp3" loop style="display:none;"></audio>
 <script>
-  // Play audio on first user interaction to bypass autoplay restrictions
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     var audio = document.getElementById('bg-music');
     function playAudioOnce() {
       if (audio.paused) {
-        audio.play().catch(()=>{});
+        audio.play().catch(() => {});
       }
       document.removeEventListener('click', playAudioOnce);
       document.removeEventListener('keydown', playAudioOnce);
