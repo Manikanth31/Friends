@@ -427,32 +427,40 @@ body {
     margin-bottom: 2rem;
 }
 
+
 .photo-item {
     aspect-ratio: 1;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    background: rgba(20, 30, 50, 0.85);
+    border: 1.5px solid rgba(74, 144, 226, 0.15);
+    border-radius: 20px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.25,0.46,0.45,0.94);
     overflow: hidden;
     position: relative;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
 }
 
 .photo-item:hover {
-    transform: scale(1.05);
-    border-color: rgba(74, 144, 226, 0.5);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05) rotate(-1deg);
+    border-color: #4a90e2;
+    box-shadow: 0 12px 40px 0 rgba(74, 144, 226, 0.25);
 }
 
 .hidden-photo {
+    display: none;
     opacity: 0;
     transform: scale(0.8);
-    transition: all 0.5s ease;
+    transition: all 0.5s cubic-bezier(0.25,0.46,0.45,0.94);
 }
-
 .hidden-photo.show {
+    display: flex;
     opacity: 1;
     transform: scale(1);
+    animation: fadeInScale 0.5s;
 }
 
 .photo-placeholder {
@@ -462,20 +470,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #ccc;
+    color: #dbeafe;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+    font-size: 1.1rem;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .photo-placeholder i {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
     color: #4a90e2;
+    filter: drop-shadow(0 0 8px #4a90e2aa);
 }
 
-.photo-placeholder span {
-    font-size: 0.8rem;
-    line-height: 1.2;
+.photo-placeholder span, .photo-placeholder p {
+    font-size: 1.2rem;
+    color: #dbeafe;
+    opacity: 0.95;
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .see-more-container {
