@@ -693,3 +693,26 @@ body {
         gap: 1rem;
     }
 } 
+
+.memory-wall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.memory-card {
+  background: #fff6f9;
+  color: #222;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  font-family: 'Poppins', sans-serif;
+  max-width: 200px;
+  transform: rotate(-1deg);
+  transition: transform 0.3s;
+}
+.memory-card:hover {
+  transform: scale(1.1);
+}
